@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo -n "What is your Github username: "
+read -r ans
+sed "s/gituser/"$ans"/g" template >> gur
+chmod +x gur
+rm template gur-gen
